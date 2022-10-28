@@ -208,33 +208,30 @@ img{
 }
 .benefits .item{
     width: 270px;
-    padding: 25px 100px;
 }
-.benefits.item::before {
+.benefits .item::before {
     content: "";
     display: block;
     height: 120px;
-    border-radius: 4px;
-    background-color: #F5F4FA;
-
-    outline: 5px solid black; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    
-    margin-bottom: 30px;
-    background-size: contain;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    padding: 25px 100px;
+    margin-bottom: 30px;
 }
-.icon-antenna{
-    background-image: url(../images/antenna\ 1.svg);
+.icon-antenna:before{
+    background-image: url("../images/antenna\ 1.svg");
 }
-.icon-clock{
-    background-image: url(../images/clock\ 1.svg);
+.icon-clock:before{
+    background-image: url("../images/clock\ 1.svg");
 }
-.icon-diagram{
-    background-image: url(../images/diagram\ 1.svg);
+.icon-diagram:before{
+    background-image: url("../images/diagram\ 1.svg");
 }
-.icon-astronaut{
-    background-image: url(../images/astronaut\ 1.svg);
+.icon-astronaut:before{
+    background-image: url("../images/astronaut\ 1.svg");
 }
 
 .benefits .details {
