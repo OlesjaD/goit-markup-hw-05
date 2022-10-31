@@ -119,10 +119,20 @@ img{
     color: var(--primary-text-color);
 }
 .nav-address .link{
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--primary-text-color);
+    align-items: center;
+    justify-content: center;
+}
+.mail-nav{
+    margin-right: 10px;
+    fill: currentColor;
+}
+.tel-nav{
+    margin-right: 10px;
+    fill: currentColor;
 }
 .nav-address .link:focus,
 .nav-address .link:hover{
@@ -278,6 +288,7 @@ img{
     line-height: 1.19;
     text-align: center;
     color: var(--primary-text-color);
+    margin-bottom: 16px;
 }
 .work{
     display: flex; 
@@ -292,19 +303,68 @@ img{
     padding-bottom: 94px;
     background-color: #F5F4FA;
 }
+.work1 .socials-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+}
+.work1 .icon {
+    fill: #AFB1B8;
+}
+.link:hover .icon,
+.link:focus .icon {
+    fill: var(--white-color);
+}
+
 .team {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 .container1{
     width: 270px;
-    height: 368px;
+    min-height: 368px;
     background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 .container1 +.container1{
     margin-left: 30px;
+}
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.company{
+    fill: #AFB1B8;
+}
+.company-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    background-color: var(--white-color);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+.icon-clients{
+    display: flex;
+    justify-content: center;
+}
+ 
+.clients .item +.item{
+    margin-left: 30px;
+}
+.company-link:hover .company{
+    fill: var(--accent-color);
+}
+.company-link:hover{
+    border-color: var(--accent-color);
 }
    
 
@@ -314,6 +374,11 @@ img{
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
+}
+.info{
+    display: flex;
+    align-items: baseline;
 }
 .footer .logo-studio{
     font-family: 'Raleway', sans-serif;
@@ -349,6 +414,38 @@ img{
 .footer .mail:hover, .footer .mail:focus,
 .footer .tel:hover,.footer .tel:focus{
     color: var(--accent-color);
+}
+.join{
+    text-transform: uppercase;
+    color: var(--white-color);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.footer .icon{
+    fill: var(--white-color);
+}
+.footer .socials-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.link:hover .socials-item,
+.link:focus .socials-item{
+    background-color: var(--accent-color);
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social-page{
+    margin-left: 70px;
+}
+.social .link +.link{
+    margin-left: 10px;
 }
        
 
