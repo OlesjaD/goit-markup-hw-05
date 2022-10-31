@@ -355,12 +355,12 @@ img{
 .icon-clients{
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
  
-.clients .item +.item{
-    margin-left: 30px;
-}
-.company-link:hover .company{
+.company-link:hover .company,
+.company-link:focus .company{
     fill: var(--accent-color);
 }
 .company-link:hover{
@@ -439,6 +439,7 @@ img{
 }
 .social{
     display: flex;
+    align-items: center ;
     justify-content: center;
 }
 .social-page{
@@ -480,10 +481,18 @@ img{
 .filters .btn:focus{
     color: var(--white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio .link{
-    background-color: #EEEEEE;
+    display: block;
+    background-color: var(--white-color);
 }
+.portfolio .link:hover,
+.portfolio .link:focus{
+    /*background-color: var(--accent-color);*/
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .title-portfolio{
     font-weight: 700;
     font-size: 18px;
@@ -515,5 +524,6 @@ img{
     margin-bottom: 0;
 }
 .menu{
+    /*background-color: var(--white-color);*/
     padding: 20px 24px;
 }
