@@ -225,6 +225,7 @@ img{
     height: 120px;
     background-color: #F5F4FA;
     margin-bottom: 30px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -325,9 +326,13 @@ img{
 .work1 .icon {
     fill: #AFB1B8;
 }
-.link:hover .icon,
-.link:focus .icon {
+.socials-item:hover .icon,
+.socials-item:focus .icon{
     fill: var(--white-color);
+}
+.socials-item:hover,
+.socials-item:focus{
+    background-color: var(--accent-color);
 }
 
 .team {
@@ -360,7 +365,6 @@ img{
     background-color: var(--white-color);
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    padding: 16px 32px;
 }
 .icon-clients{
     display: flex;
@@ -373,7 +377,8 @@ img{
 .company-link:focus .company{
     fill: var(--accent-color);
 }
-.company-link:hover{
+.company-link:hover,
+.company-link:focus{
     border-color: var(--accent-color);
 }
    
@@ -443,8 +448,8 @@ img{
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
-.link:hover .socials-item,
-.link:focus .socials-item{
+.socials-item:hover,
+.socials-item:focus{
     background-color: var(--accent-color);
 }
 .social{
