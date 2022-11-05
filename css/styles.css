@@ -340,7 +340,7 @@ img{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
-    padding-top: 27px;                      /*Зробити фільт елементів*/
+    padding-top: 27px;
 }
 .work1 {
     padding-top: 94px;
@@ -640,6 +640,7 @@ img{
 }
 .thumb{
     position: relative;
+    overflow: hidden;
 }
 .portfolio-overlay{
     position: absolute;
@@ -655,11 +656,15 @@ img{
 
     background-color: rgba(33, 150, 243, 0.9);
 
-    transform: translateY(100%);
+    transform: translateY(101%);
 }
 .portfolio-overlay .text{
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: var(--white-color);
+}
+.container2:focus .portfolio-overlay,
+.container2:hover .portfolio-overlay {
+    transform: translateY(0);
 }
