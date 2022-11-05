@@ -109,6 +109,10 @@ img{
     color: var(--title-text-color);
     padding: 32px 0;
     display: block;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -137,6 +141,10 @@ img{
     color: var(--primary-text-color);
     align-items: center;
     justify-content: center;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-nav{
     margin-right: 10px;
@@ -358,6 +366,10 @@ img{
 }
 .work1 .icon {
     fill: #AFB1B8;
+
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-item:hover .icon,
 .socials-item:focus .icon{
@@ -388,6 +400,10 @@ img{
 }
 .company{
     fill: #AFB1B8;
+
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-link {
     display: flex;
@@ -458,6 +474,11 @@ img{
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 }
+.footer .item{
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer .address:hover, .footer .address:focus,
 .footer .mail:hover, .footer .mail:focus,
 .footer .tel:hover,.footer .tel:focus{
@@ -480,6 +501,10 @@ img{
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-item:hover,
 .socials-item:focus{
@@ -587,6 +612,10 @@ img{
     border-radius: 4px;
     min-width: 73px;
     border-color: transparent;
+
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters .btn:hover,
 .filters .btn:focus{
@@ -597,10 +626,13 @@ img{
 .portfolio .link{
     display: block;
     background-color: var(--white-color);
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio .link:hover,
 .portfolio .link:focus{
-    /*background-color: var(--accent-color);*/
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -657,6 +689,10 @@ img{
     background-color: rgba(33, 150, 243, 0.9);
 
     transform: translateY(101%);
+    
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-overlay .text{
     font-size: 18px;
