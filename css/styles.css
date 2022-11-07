@@ -363,11 +363,15 @@ img{
     height: 44px;
     background-color: var(--white-color);
     border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .work1 .icon {
     fill: #AFB1B8;
 
-    transition-property: fill, background-color;
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -540,7 +544,7 @@ img{
     visibility: visible;
     pointer-events: initial;*/
 
-    transition: opasity 150ms linear, visibility 150ms linear;
+    transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 .backdrop.is-hidden{
@@ -601,6 +605,7 @@ img{
     margin-left: 8px;
 }
 .filters .btn{
+    cursor: pointer;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
